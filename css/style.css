@@ -56,6 +56,7 @@ body {
      width: 20rem;
     height: 15rem;
     margin-top: 1.2rem;
+    margin-bottom: 1rem;
     background-color: #EEEEEF;
 
 }
@@ -63,6 +64,7 @@ body {
     border: black 0.1rem solid;
     width: 20rem;
     height: 15rem;
+      margin-bottom: 1rem;
 }
  legend{
     font-family: 'Handlee', cursive;
@@ -115,3 +117,32 @@ vertical-align: middle;
   font-weight: 700;
   font-size: 1.0rem;
 
+}
+.item_section{
+    margin: 0 auto;
+     width: 20rem;
+    height: 15rem;
+
+    margin-bottom: 1rem;
+    background-color: #EEEEEF;
+}
+.list_items {
+    width: 25%;
+    margin-top: 1rem;
+
+}
+.list_items li {
+    display: block;
+    margin-left: 1rem;
+}
+.item_unit{
+    width: 30%;
+    float: right;
+    margin-top: 1rem;
+}
+.item_unit li {
+    display: block;
+    margin-bottom: 0.2rem;
+    margin-top: -2.3rem;
+    margin-left: -6rem;
+}
