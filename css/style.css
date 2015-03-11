@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+//END OF css RESET
+
+body {
+    margin: 0  auto;
+}
+.input_section{
+    margin: 0 auto;
+     width: 20rem;
+    height: 15rem;
+    margin-top: 1.2rem;
+    background-color: #EEEEEF;
+
+}
+  fieldset{
+    border: black 0.1rem solid;
+    width: 20rem;
+    height: 15rem;
+}
+ legend{
+    font-family: 'Handlee', cursive;
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+form {
+    margin-top: 1.5rem;
+}
+#add_item,#qty{
+    padding: .5rem .6rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+   box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-bottom: 0.6rem;
+    margin-top: 0.8rem;
+}
+label {
+text-align: right;
+display: inline-block;
+width: 5rem;
+margin-top: 5rem 1rem 0 0 ;
+}
+.save_btn ,.reset_btn{
+     margin: 0 auto;
+      display: inline;
+      vertical-align: middle;
+}
+.save_btn {
+    margin: 0 auto;
+/*width: 5rem;*/
+height: 1.5rem;
+margin-left: 5.3rem;
+vertical-align: middle;
+  margin-top: 1rem;
+}
+
+.reset_btn {
+    margin: 0 auto;
+/*width: 5rem;*/
+height: 1.5rem;
+margin-left: 5.8rem;
+vertical-align: middle;
+  margin-top: 1rem;
+}
+.required {
+  color: red;
+  font-weight: 700;
+  font-size: 1.0rem;
+
