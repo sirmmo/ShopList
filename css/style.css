@@ -119,6 +119,7 @@ vertical-align: middle;
 
 }
 .item_section{
+    display: none;
     margin: 0 auto;
      margin-bottom: 1rem;
 }
@@ -131,6 +132,8 @@ vertical-align: middle;
 .list_items {
 list-style-type: decimal;
  margin-left: 1.5rem;
+ display: inline-block;
+
 }
 .del {
     color: red;
