@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
     //Add items
@@ -5,6 +6,8 @@ $(document).ready(function() {
     //Event Listner to SAVE button
 
     $(".save_btn ").click( function () {
+//location.reload(true);
+
         $('.item_section').show();
 
        var item = $(' #add_item  ').val();
@@ -13,6 +16,7 @@ $(document).ready(function() {
           var n_item = $(' #qty').val();
           $( '.item_unit ').append ( '  <li>  ' + n_item + '  </li> ' );
           $(' #qty').val(n_item);
+
        //var item = $( this  ).val();
         //$(' #qty').val(n_item);
 
