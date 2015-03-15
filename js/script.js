@@ -13,22 +13,37 @@ $(document).ready(function() {
 
        var item = $(' #add_item[type=text]  ').val();
         var n_item = $(' #qty[type=text]').val();
+        if (item <1) {
+
+        };
          /*$( '.list_items ').append( ' <li>' + item   +  ' </li> ' );
        $( '.item_unit ').append ( '  <li>  ' + n_item + '  </li> ' );
         $( '.del  ').append( ' <li>' + '<a href = "#"> ' + 'delete'  + '</a>'  +  ' </li> ' );
          $( '.edit  ').append( ' <li>' + '<a href = "#"> ' + 'edit'  + '</a>'  +  ' </li> ' );
          $( '.check_out  ').append( ' <li>' + '<a href = "#"> ' + 'check'  + '</a>'  +  ' </li> ' );*/
 
-         $( 'ol').append( ' <li> <span class="list_items">' + item +
-            '</span><span class="item_unit">'+n_item+
-            '</span><span class="del">delete</span>
-            </span class="edit>edit</span><span class="check_out"></span></li></li> ');
-/*$(' .del').on('click ' , function () {
-        $( '.del  ').append( ' <li>' + '<a href = "#"> ' + 'delete'  + '</a>'  +  ' </li> ' );
-                $(this).closest('li').remove();
-        //$('.list_items')[0].remove();
-         //$('.item_unit')[0].remove();
-    });*/
+         $( 'ol').append ('<li> <span class="list_items">' + item + '</span> ' +
+            '<span class="item_unit">'+ n_item+ '</span>' +
+            '<span class="del">delete</span>' +
+           '<span class=" edit "> edit</span>' +
+           '<span class=" check "> check</span> </li>' );
+
+            $(' .del').on('click ' , function () {
+                 $(this).closest('li').remove();
+
+    });
+            $('.edit').on('click', function() {
+                var item = $(' #add_item[type=text]  ').val();
+                var n_item = $(' #qty[type=text]').val();
+               /* if (item == ' ') {
+                    alert('Enter item')
+                }else{
+                    alert(item + ' ' + n_item );
+                }*/
+
+
+
+            });
 
          return false; //Prevents the page not to reload every time item sinserted
 
@@ -36,10 +51,11 @@ $(document).ready(function() {
 
 //Empty current input form
      $(".reset_btn ").click( function () {
-         //alert('RESET button is clicked' );
-         $('.list_items')[0].reset();
-         $('.item_unit')[0].reset();
-           $('.item_section').show();
+           var item = $(' #add_item[0]  ').val();
+           var n_item = $(' #qty[0]').val();
+         $('item').val(' ' );
+         $('n_item').val( ' ');
+
 
     });
 

@@ -123,29 +123,47 @@ vertical-align: middle;
     margin: 0 auto;
      margin-bottom: 1rem;
 }
+
 .items {
     margin-top: 1rem;
-    -webkit-column-count:   5; /* Chrome, Safari, Opera */
-    -moz-column-count:  5; /* Firefox */
-    column-count:  5;
+    /*-webkit-column-count:   5; /* Chrome, Safari, Opera */
+    /*-moz-column-count:  5; /* Firefox */
+    /*column-count:  5;*/
 }
 .list_items {
 list-style-type: decimal;
  margin-left: 1.5rem;
- word-break: break;
- display: inline-block;
- width: auto;
+  display: inline-block;
+  margin-top: 0.5rem;
+  width:auto;
+
 }
 .item_unit{
-   display: inline-block;
-   margin-left: 1.0rem;
-   width: auto;
+   display: block;
+    margin-left: 13.3rem;
+  margin-top: -1rem;
+  width: auto;
 }
 .del {
     color: red;
-      margin-right: 3rem;
-
+       margin-left: 15.5rem;
+      display: block;
+     margin-top: -1rem;
+ width: auto;
 }
 .edit {
+    margin-left: 19rem;
+  color: blue;
+  display: block;
+   margin-top: -1rem;
+  width: auto;
+}
+.check{
+  float: right;
+  margin-left: 24rem;
+  margin-top: -1rem;
+  color: blue;
+  display: block;
+   width: 15%;
 
 }
