@@ -13,13 +13,16 @@ $(document).ready(function() {
 
        var item = $(' #add_item[type=text]  ').val();
         var n_item = $(' #qty[type=text]').val();
-         $( '.list_items ').append( ' <li>' + item   +  ' </li> ' );
+         /*$( '.list_items ').append( ' <li>' + item   +  ' </li> ' );
        $( '.item_unit ').append ( '  <li>  ' + n_item + '  </li> ' );
         $( '.del  ').append( ' <li>' + '<a href = "#"> ' + 'delete'  + '</a>'  +  ' </li> ' );
          $( '.edit  ').append( ' <li>' + '<a href = "#"> ' + 'edit'  + '</a>'  +  ' </li> ' );
-         $( '.check_out  ').append( ' <li>' + '<a href = "#"> ' + 'check'  + '</a>'  +  ' </li> ' );
+         $( '.check_out  ').append( ' <li>' + '<a href = "#"> ' + 'check'  + '</a>'  +  ' </li> ' );*/
 
-
+         $( 'ol').append( ' <li> <span class="list_items">' + item +
+            '</span><span class="item_unit">'+n_item+
+            '</span><span class="del">delete</span>
+            </span class="edit>edit</span><span class="check_out"></span></li></li> ');
 /*$(' .del').on('click ' , function () {
         $( '.del  ').append( ' <li>' + '<a href = "#"> ' + 'delete'  + '</a>'  +  ' </li> ' );
                 $(this).closest('li').remove();
