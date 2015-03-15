@@ -5,17 +5,21 @@ $(document).ready(function() {
 
     //Event Listner to SAVE button
 
-    $(".save_btn ").click( function () {
+    $('form').submit( function () {
 //location.reload(true);
+ $('.item_section').show();
 
-        $('.item_section').show();
+       var item = $(' input[type=text]  ').val();
 
-       var item = $(' #add_item  ').val();
          $( '.list_items ').append( ' <li>' + item   +  ' </li> ' );
-         $(' #add_item').val(item);
-          var n_item = $(' #qty').val();
+
+         //$(' #add_item').val(item);
+
+          var n_item = $(' input [type=text]').val();
           $( '.item_unit ').append ( '  <li>  ' + n_item + '  </li> ' );
-          $(' #qty').val(n_item);
+          //$(' #qty').val(n_item);
+            return false;
+
 
        //var item = $( this  ).val();
         //$(' #qty').val(n_item);
