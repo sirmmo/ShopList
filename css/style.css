@@ -143,6 +143,7 @@ list-style-type: decimal;
 }
 .del {
     color: red;
+      margin-right: 3rem;
 
 }
 .edit {
