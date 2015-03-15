@@ -4,30 +4,18 @@ $(document).ready(function() {
     //Add items
 
     //Event Listner to SAVE button
+    var item = "";
+    var  n_item = "";
+    //
+    $('.save_btn').click( function () {
 
-    $('form').submit( function () {
-//location.reload(true);
- $('.item_section').show();
+        $('.item_section').show();
+       var item = $(' #add_item[type=text]  ').val();
+      $( '.list_items ').append( ' <li>' + item   +  ' </li> ' );
 
-       var item = $(' input[type=text]  ').val();
-
-         $( '.list_items ').append( ' <li>' + item   +  ' </li> ' );
-
-         //$(' #add_item').val(item);
-
-          var n_item = $(' input [type=text]').val();
+           var n_item = $(' #qty[type=text]').val();
           $( '.item_unit ').append ( '  <li>  ' + n_item + '  </li> ' );
-          //$(' #qty').val(n_item);
-            return false;
-
-
-       //var item = $( this  ).val();
-        //$(' #qty').val(n_item);
-
-
-          // $( '.item_unit ').append ( '  <li>  ' + n_item + '  </li> ' );
-
-
+           return false; //Prevents the page not to reload every time item sinserted
 
          //alert('Save button is clicked' );
     });
@@ -36,6 +24,7 @@ $(document).ready(function() {
          //alert('RESET button is clicked' );
          $('.list_items')[0].reset();
          $('.item_unit')[0].reset();
+           $('.item_section').show();
 
     });
 

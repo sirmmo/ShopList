@@ -134,10 +134,12 @@ list-style-type: decimal;
  margin-left: 1.5rem;
  word-break: break;
  display: inline-block;
+ width: auto;
 }
 .item_unit{
    display: inline-block;
-   margin-left: 6.5rem;
+   margin-left: 1.0rem;
+   width: auto;
 }
 .del {
     color: red;
