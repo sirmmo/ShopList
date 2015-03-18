@@ -64,9 +64,10 @@ body {
   fieldset{
     border: black 0.1rem solid;
     width: 35rem;
-    height: 15rem;
-      margin-bottom: 1rem;
+    height: auto;
+      margin-bottom: 1.5rem;
        background-color: #EEEEEF;
+       padding-bottom: 2rem;
 }
  legend{
     font-family: 'Handlee', cursive;
@@ -118,6 +119,11 @@ vertical-align: middle;
   font-size: 1.0rem;
 
 }
+#error{
+  display: none;
+  color: red;
+  margin-left: 27rem;
+}
 .item_section{
     display: none;
     margin: 0 auto;
@@ -165,5 +171,22 @@ list-style-type: decimal;
   color: blue;
   display: block;
    width: 15%;
+
+}
+.delimg {
+  /*display: none;*/
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.editimg{
+  width: 1.5rem;
+  height: 1.4rem;
+  margin-top: -1rem;
+}
+.checkimg {
+width: 1.3rem;
+  height: 1.3rem;
+  margin-top: -4.5rem;
+  margin-left: .5rem;
 
 }
