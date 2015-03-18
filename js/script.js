@@ -32,14 +32,25 @@ $(document).ready(function() {
                  $(this).closest('li').remove();
 
     });
-            $('.edit').on('click', function() {
-                var item = $(' #add_item[type=text]  ').val();
-                var n_item = $(' #qty[type=text]').val();
-               /* if (item == ' ') {
-                    alert('Enter item')
-                }else{
-                    alert(item + ' ' + n_item );
-                }*/
+            $(' .edit').on('click', function() {
+                 var item = $(' #add_item[type=text]  ').val();
+                    var n_item = $(' #qty[type=text]').val();
+
+                $('input').val(item);
+                $('input').val(n_item);
+
+                //var item = $(' #add_item[type=text]').val();
+               //var n_item = $(' #qty[type=text]').val();
+
+                //$('input').val(item);
+               // $('input').val(item);
+                 // $(this).closest('li').val();
+                  /* var item = $(' #add_item[type=text]  ').val();
+                    var n_item = $(' #qty[type=text]').val();
+                   $('.item_section').hide();
+                    $('form').closest('li').val();
+                    $('form').show();*/
+                     $('.item_section').hide();
 
 
 
@@ -51,10 +62,9 @@ $(document).ready(function() {
 
 //Empty current input form
      $(".reset_btn ").click( function () {
-           var item = $(' #add_item[0]  ').val();
-           var n_item = $(' #qty[0]').val();
-         $('item').val(' ' );
-         $('n_item').val( ' ');
+          $('#add_item[type=text]').val( ' ');
+                $('#qty[type=text]').val( ' ');
+
 
 
     });
