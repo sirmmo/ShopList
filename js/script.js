@@ -30,9 +30,11 @@ $(document).ready(function() {
 
            $(' .del').on('click ' , function () {
                  $(this).closest('li').remove();
+
      });
             $(' .edit').click (function() {
-               alert('Edit button detected');
+            $(this).closest(' input').val();
+               //alert('Edit button detected');
          $('.item_section').hide();
 });
             $('.check').click(function () {
@@ -40,8 +42,6 @@ $(document).ready(function() {
 
 
             });
-
-
 
          return false; //Prevents the page not to reload every time item sinserted
 
