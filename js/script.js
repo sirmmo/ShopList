@@ -28,11 +28,13 @@ $(document).ready(function() {
 
 }
 
-           $(' .del').on('click ' , function () {
+           $('.del').on('click ' , function () {
                  $(this).closest('li').remove();
 
+
      });
-            $(' .edit').click (function() {
+
+            $('.edit').click (function() {
             $(this).closest(' input').val();
                //alert('Edit button detected');
          $('.item_section').hide();
@@ -43,7 +45,7 @@ $(document).ready(function() {
 
             });
 
-         return false; //Prevents the page not to reload every time item sinserted
+     return false;    //return false; //Prevents the page not to reload every time item sinserted
 
  });
 
