@@ -34,10 +34,11 @@ $(document).ready(function() {
 
      });
             $(' .edit').click (function() {
-            $(this).closest('li ').val();
-            $(' input #add_item').val();
-             $(' input  #qty').val();
-             $('  input').show();
+           var line = $(this).closest('li ');
+           var li = $(line).find(".list_items").text();
+           var lu = $(line).find(".item_unit").text();
+           $(' input #add_item').val(li);
+           $(' input #qty').val(lu);
 
                //alert('Edit button detected');
 
